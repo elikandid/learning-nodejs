@@ -4,6 +4,12 @@ import {createServer} from 'node:http';
 
 //Create HTPP Server
 const server = createServer((req,res) => {
+    console.log(req.url);
+    if (req.url.includes('create')) {
+
+    }
+
+    
     res.writeHead(200, {'Content-Type':'text/html'});
     res.end('<h1>We have an HTP Server</h1>');
 });
