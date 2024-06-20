@@ -1,12 +1,14 @@
 import {createServer} from 'node:http';
+import {unlink, writeFile} from 'node:fs';
 
-// Define request handler
+
 
 //Create HTPP Server
 const server = createServer((req,res) => {
     console.log(req.url);
     if (req.url.includes('create')) {
-
+//Create file
+writeFile('./abc.html', '<h1>Learning Node,js</h1>'(err))
     }
 
     
